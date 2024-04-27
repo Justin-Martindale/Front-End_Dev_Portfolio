@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NetworkMarju Portfolio</title>
+    <!-- Link to Tailwind CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
+</head>
+<body class="bg-gray-900 text-white font-roboto">
+        <!-- Nav Bar -->
+    <header class="bg-black py-4">
+        <nav class="text-right pr-4">
+            <ul>
+                <li class="inline-block mr-4"><a href="{% url 'about' %}" class="text-green-500 hover:text-pink-500 hover:underline">About</a></li>
+                <li class="inline-block mr-4"><a href="{% url 'projects' %}" class="text-green-500 hover:text-pink-500 hover:underline">Projects</a></li>
+                <li class="inline-block"><a href="{% url 'contact' %}" class="text-green-500 hover:text-pink-500 hover:underline">Contact</a></li>
+
+
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container mx-auto py-8">
+        <!-- Title -->
+        <section id="about" class="py-16">
+            <div class="container mx-auto">
+                <h1 class="text-4xl font-bold mb-8 text-center">About Me</h1>
+                <p class="text-lg">Aspiring freelance front-end web developer with a deep fascination for creating immersive user experiences and sleek, cutting-edge designs. With a background in IT support and a knack for creative problem-solving, I bring a unique blend of technical expertise and artistic flair to every project. My goal is to continually expand my skills in web development and contribute to innovative projects that push the boundaries of user interface design. I have many projects under my belt including this site, it was hand coded by me. Check out the projects below to learn more.</p>
+            </div>
+        </section>
+
+        <hr>
+
+        <!-- Project section -->
+        <section id="projects" class="py-16">
+            <div class="container mx-auto">
+                <h1 class="text-4xl font-bold mb-8 text-center ">What I've Done</h1>
+                <!-- Project 1 -->
+                <div class="project mb-8 shadow bg-gray-800 rounded-lg pl-4" id="Networking-Project-1">
+                    <h2 class="text-2xl font-bold mb-2 text-green-500">Building a Load Balancer </h2>
+                    <p class="text-lg mb-4">In this project, I followed a tutorial on YouTube to create a Load balancer then took what I learned to make a pfsense router load boalancer hosted on my rasbery pi 4</p>
+                    <a href="{% url 'projects' %}#Networking-Project-1" class="btn bg-green-500 hover:bg-green-700 py-2 px-4 rounded-lg text-black">View Project</a>
+                    <div style="height: 1em;"></div>
+                </div>
+                <!-- Project 2 -->
+                <div class="project mb-8 shadow bg-gray-800 rounded-lg pl-4" id="Networking-Project-2">
+                    <h2 class="text-2xl font-bold mb-2 text-green-500">Building a Hypervisor Environment</h2>
+                    <p class="text-lg mb-4">In this project, I followed a tutorial on YouTube to create a Proxmox environment then took what I learned to make a hypervisor environment to make virtual machines and containers hosted on my nook</p>
+                    <a href="{% url 'projects' %}#Networking-Project-2" class="btn bg-green-500 hover:bg-green-700 py-2 px-4 rounded-lg text-black">View Project</a>
+                    <div style="height: 1em;"></div>
+                </div>
+                <!-- Project 3 -->
+
+<!-- TO DO replace placehodler vid -->
+                <div class="project mb-8 shadow bg-gray-800 rounded-lg pl-4" id="Networking-Project-3">
+                    <h2 class="text-2xl font-bold mb-2 text-green-500">Building a Portfolio Website</h2>
+                    <p class="text-lg mb-4">In this project, I followed a tutorial on YouTube to use Django for back end. then took what I learned to make a Portfolio website to host my projects</p>
+                    <a href="{% url 'projects' %}#Networking-Project-3" class="btn bg-green-500 hover:bg-green-700 py-2 px-4 rounded-lg text-black">View Project</a>
+                    <div style="height: 1em;"></div>
+                </div>
+                <!-- Add more projects as needed -->
+            </div>
+        </section>
+        
+    </main>
+    <footer class="py-8 bg-gray-900 text-center">
+        <div class="container mx-auto">
+            <p>&copy; 2024 NetworkMarju. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

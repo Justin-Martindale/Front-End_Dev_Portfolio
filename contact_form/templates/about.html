@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - NetworkMarju Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-900 text-white">
+    {% load static %}
+
+    <header class="bg-black py-4">
+        <nav class="text-right pr-4">
+            <ul>
+                <li class="inline-block mr-4"><a href="{% url 'index' %}" class="text-green-500 hover:text-pink-500 hover:underline">Home</a></li>
+                <li class="inline-block mr-4"><a href="{% url 'about' %}" class="text-green-500 hover:text-pink-500 hover:underline">About</a></li>
+                <li class="inline-block mr-4"><a href="{% url 'projects' %}" class="text-green-500 hover:text-pink-500 hover:underline">Projects</a></li>
+                <li class="inline-block"><a href="{% url 'contact' %}" class="text-green-500 hover:text-pink-500 hover:underline">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container mx-auto px-4 py-8">
+        <h1 class="text-4xl font-bold mb-4 text-center">About Me</h1>
+        <img src="{% static 'images/profile-pic.png' %}" alt="Profile Picture" class="mx-auto mb-4 rounded-lg">
+        <p class="text-lg leading-relaxed">
+            Passionate front-end web developer with a deep fascination for creating immersive user experiences and sleek, cutting-edge designs. With a background in IT support and a knack for creative problem-solving, I bring a unique blend of technical expertise and artistic flair to every project. My goal is to continually expand my skills in web development and contribute to innovative projects that push the boundaries of user interface design.
+        </p>
+    </div>
+
+    <hr class="container mx-auto py-8">
+    <div style="height: 20em;"></div>
+    <footer class="py-8 bg-gray-900 text-center">
+        <div class="container mx-auto">
+            <p>&copy; 2024 NetworkMarju. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

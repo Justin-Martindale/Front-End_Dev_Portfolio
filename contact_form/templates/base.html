@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}NetworkMarju Portfolio{% endblock %}</title>
+       <!-- Link to Tailwind CSS CDN -->
+       <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+       <!-- Fonts -->
+       <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+       
+</head>
+<body class="bg-gray-900 text-white font-roboto">
+    <header class="bg-black py-4">
+        
+        <!-- Nav Bar -->
+        <nav class="text-right pr-4">
+            <ul>
+                <li class="inline-block mr-4"><a href="{% url 'index' %}" class="text-green-500 hover:text-pink-500 hover:underline">Home</a></li>
+                <li class="inline-block mr-4"><a href="{% url 'about' %}" class="text-green-500 hover:text-pink-500 hover:underline">About</a></li>
+                <li class="inline-block mr-4"><a href="{% url 'projects' %}" class="text-green-500 hover:text-pink-500 hover:underline">Projects</a></li>
+                <li class="inline-block"><a href="{% url 'contact' %}" class="text-green-500 hover:text-pink-500 hover:underline">Contact</a></li>
+
+
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container mx-auto py-8">
+        {% block content %}
+        <!-- This block will be overridden by content from other templates -->
+       
+        {% endblock %}
+    </main>
+
+    <footer class="py-8 bg-gray-900 text-center">
+        <div class="container mx-auto">
+            <p>&copy; 2024 NetworkMarju. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Add your JavaScript links here -->
+    
+</body>
+</html>

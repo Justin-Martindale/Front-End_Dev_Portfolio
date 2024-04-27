@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - NetworkMarju Portfolio</title>
+    <!-- Link to Tailwind CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
+</head>
+<body class="bg-gray-900 text-white font-roboto">
+    <!-- Nav Bar -->
+    <header class="bg-black py-4">
+        <nav class="text-right pr-4">
+            <ul>
+                <li class="inline-block mr-4"><a href="{% url 'index' %}" class="text-green-500 hover:text-pink-500 hover:underline">Home</a></li>
+                <li class="inline-block mr-4"><a href="{% url 'about' %}" class="text-green-500 hover:text-pink-500 hover:underline">About</a></li>
+                <li class="inline-block mr-4"><a href="{% url 'projects' %}" class="text-green-500 hover:text-pink-500 hover:underline">Projects</a></li>
+                <li class="inline-block"><a href="{% url 'contact' %}" class="text-green-500 hover:text-pink-500 hover:underline">Contact</a></li>
+
+
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container mx-auto py-8">
+            <!-- Title -->
+        <h1 class="text-4xl font-bold mb-8 text-center">Projects List</h1>
+
+            <!-- Projects -->
+        <div class="project mb-8" id="Networking-Project-1">
+            <h2 class="text-2xl font-bold mb-2 text-green-500">Building a Load Balancer</h2>
+            <p class="text-lg mb-4">In this project, I followed a tutorial on YouTube to create a Load balancer then took what I learned to make a pfsense router load boalancer hosted on my rasbery pi 4.</p>
+            <p class="text-lg mb-4">Check out the video tutorial:</p>
+            <div class="iframe-container mb-4">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/LlbTSfc4biw" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <a href="{% url 'index' %}#projects" class="btn bg-green-500 hover:bg-green-700 py-2 px-4 rounded-lg text-black">Back to Home</a>
+        </div>
+            <!-- Space Break -->
+            <hr class="container mx-auto py-8">
+        <div style="height: 30em;"></div>
+
+        <div class="project mb-8" id="Networking-Project-2">
+            <h2 class="text-2xl font-bold mb-2 text-green-500">Building a Hypervisor Environment</h2>
+            <p class="text-lg mb-4">In this project, I followed a tutorial on YouTube to create a Proxmox environment then took what I learned to make a hypervisor environment to make virtual machines and containers hosted on my nook.</p>
+            <p class="text-lg mb-4">Check out the video tutorial:</p>
+            <div class="iframe-container mb-4">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/6aLyZisehCU" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <a href="{% url 'index' %}#projects" class="btn bg-green-500 hover:bg-green-700 py-2 px-4 rounded-lg text-black">Back to Home</a>
+        </div>
+            <!-- Space Break -->
+            <hr class="container mx-auto py-8">
+        <div style="height: 30em;"></div>
+<!-- TO DO replace placeholder vid -->
+        <div class="project mb-8" id="Networking-Project-3">
+            <h2 class="text-2xl font-bold mb-2 text-green-500">Building a Portfolio</h2>
+            <p class="text-lg mb-4">In this project, I followed a tutorial on YouTube to use Django for back end. then took what I learned to make a Portfolio website to host my projects.</p>
+            <p class="text-lg mb-4">Check out the video tutorial:</p>
+            <div class="iframe-container mb-4">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/6aLyZisehCU" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <a href="{% url 'index' %}#projects" class="btn bg-green-500 hover:bg-green-700 py-2 px-4 rounded-lg text-black">Back to Home</a>
+        </div>
+            <!-- Space Break -->
+            <hr class="container mx-auto py-8">
+        <div style="height: 30em;"></div>
+        <!-- Add more projects as needed -->
+    </main>
+    <footer class="py-8 bg-gray-900 text-center">
+        <div class="container mx-auto">
+            <p>&copy; 2024 Networkmarju. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

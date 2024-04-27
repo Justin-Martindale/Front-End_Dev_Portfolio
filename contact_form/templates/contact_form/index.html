@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberDev Portfolio</title>
+    <!-- Link to Tailwind CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Add more fonts if needed -->
+</head>
+<body class="bg-black text-white font-roboto">
+    <header class="py-4">
+        <nav class="text-center">
+            <ul>
+                <li class="inline-block mr-4"><a href="#about" class="text-green-500 hover:text-pink-500 hover:underline">About</a></li>
+                <li class="inline-block mr-4"><a href="#projects" class="text-green-500 hover:text-pink-500 hover:underline">Projects</a></li>
+                <li class="inline-block"><a href="contact.html" class="text-green-500 hover:text-pink-500 hover:underline">Contact</a></li>
+
+            </ul>
+        </nav>
+    </header>
+    <main class="container mx-auto py-8">
+        <section id="about" class="py-16">
+            <div class="container mx-auto">
+                <h1 class="text-4xl font-bold mb-8">About Me</h1>
+                <p class="text-lg">Passionate front-end web developer with a deep fascination for creating immersive user experiences and sleek, cutting-edge designs. With a background in IT support and a knack for creative problem-solving, I bring a unique blend of technical expertise and artistic flair to every project. My goal is to continually expand my skills in web development and contribute to innovative projects that push the boundaries of user interface design</p>
+            </div>
+        </section>
+        <!-- Project section -->
+        <section id="projects" class="py-16">
+            <div class="container mx-auto">
+                <h1 class="text-4xl font-bold mb-8">Projects</h1>
+                <div class="project mb-8" id="Networking-Project-1">
+                    <h2 class="text-2xl font-bold mb-2 text-green-500">Building a Load Balancer </h2>
+                    <p class="text-lg mb-4">In this project, I followed a tutorial on YouTube to create a Load balancer then took what I learned to make a pfsense router load boalancer hosted on my rasbery pi 4</p>
+                    <a href="projects.html#Networking-Project-1" class="btn bg-green-500 hover:bg-green-700 py-2 px-4 rounded-lg text-black">View Project</a>
+                </div>
+                <div class="project mb-8" id="Networking-Project-2">
+                    <h2 class="text-2xl font-bold mb-2 text-green-500">Building a Hypervisor Environment</h2>
+                    <p class="text-lg mb-4">In this project, I followed a tutorial on YouTube to create a Proxmox environment then took what I learned to make a hypervisor environment to make virtual machines and containers hosted on my nook</p>
+                    <a href="projects.html#Networking-Project-2" class="btn bg-green-500 hover:bg-green-700 py-2 px-4 rounded-lg text-black">View Project</a>
+                </div>
+                <!-- Add more projects as needed -->
+            </div>
+        </section>
+        <section id="contact" class="py-16">
+            <div class="container mx-auto">
+                <h1 class="text-4xl font-bold mb-8">Contact Me</h1>
+                <form>
+                    <input type="text" placeholder="Your Name" class="bg-gray-800 text-white px-4 py-2 mb-4 rounded-lg w-full">
+                    <input type="email" placeholder="Your Email" class="bg-gray-800 text-white px-4 py-2 mb-4 rounded-lg w-full">
+                    <textarea placeholder="Your Message" class="bg-gray-800 text-white px-4 py-2 mb-4 rounded-lg w-full"></textarea>
+                    <button type="submit" class="btn bg-pink-500 hover:bg-pink-700 py-2 px-4 rounded-lg">Send</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="py-8 bg-gray-900 text-center">
+        <div class="container mx-auto">
+            <p>&copy; 2024 Networkmarju. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
